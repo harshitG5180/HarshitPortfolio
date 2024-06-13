@@ -29,6 +29,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import studyNotion from "./studyNotion.png";
+import crunchFitness from "./crunchFitness.png";
+
+import codeItUp from "./codeItUp.png";
+
 
 export {
   logo,
@@ -59,4 +64,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  crunchFitness,
+  studyNotion,
+  codeItUp
 };

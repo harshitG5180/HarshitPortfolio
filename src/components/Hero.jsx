@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import ComputersCanvas from "../components/canvas/Computers"
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto `}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -22,10 +23,41 @@ const Hero = () => {
             I am a Full Stack <br className='sm:block hidden' />
             Web Developer
           </p>
+
+          {/* <button className="bg-black text-white py-2 rounded text-2xl text-[20px] font-bold  mt-2">Resume</button> */}
+          <button class="bg-white hover:bg-[#915EFF] text-black font-bold py-2 px-4 rounded mt-4 mb-4 text-[20px]"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = 'https://github.com/harshitG5180';
+            }}>
+            Resume
+          </button>
+          <div className=" justify-center space-x-6 mt-2 ml-1">
+            <a href="https://github.com/harshitG5180" aria-label="GitHub">
+              <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/harshit-gupta5180/" aria-label="LinkedIn">
+              <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
+            </a>
+
+          </div>
         </div>
+
       </div>
 
+
       <ComputersCanvas />
+
+
+
+
+
+
+
+
+
+
 
       {/* Scroll down GIF wala code */}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

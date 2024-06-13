@@ -19,10 +19,10 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    studyNotion,
+    crunchFitness,
     threejs,
+    codeItUp,
 } from "../assets";
 
 export const navLinks = [
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "StudyNotion",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "EdTech Platform where students can purchase courses and instructors can upload courses on various technologies",
         tags: [
             {
                 name: "react",
@@ -211,17 +211,17 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "express",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: studyNotion,
+        source_code_link: "https://study-notion-harshit-gupta.vercel.app/",
     },
     {
-        name: "Job IT",
+        name: "Crunch Fitness",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Developed “Crunch Fitness” a gym website allowing users to select exercise categories and musclegroups, facilitating browsing of exercises alongside practical examples.",
         tags: [
             {
                 name: "react",
@@ -232,33 +232,33 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: crunchFitness,
+        source_code_link: "https://code-it-up.netlify.app/",
     },
     {
-        name: "Trip Guide",
+        name: "Code-It-Up",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Developed a web application that replicates the functionality of the CodePen online code editor using ReactJS, enabling users to create, edit, and preview HTML, CSS, and JavaScript code in real-time.",
         tags: [
             {
-                name: "nextjs",
+                name: "ReactJS",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "HTML",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "CSS",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: codeItUp,
+        source_code_link: "https://code-it-up.netlify.app/",
     },
 ];
 

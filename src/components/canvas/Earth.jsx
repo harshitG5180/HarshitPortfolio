@@ -1,60 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-const Earth = () => {
+import CanvasLoader from "../Loader";
 
-  // importing our ball 3D model
-  const planet = useGLTF("./planet/scene.gltf");
+const Earth = () => {
+  // importing our earth 3d model
+  const earth = useGLTF("./planet/scene.gltf");
 
   return (
-    <mesh>
-      {/* different kinds of light */}
-      <hemisphereLight intensity={5} groundColor='black' />
-
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight intensity={1} />
-
-      {/* main 3D planet model */}
-      <primitive
-        object={planet.scene}
-        scale={15}
-        position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-
-    </mesh>
+    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 };
 
 const EarthCanvas = () => {
-
   return (
     <Canvas
-      frameloop='demand'
       shadows
+      frameloop='demand'
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      camera={{
+        fov: 45,
+        near: 0.1,
+        far: 200,
+        position: [-4, 3, 6],
+      }}
     >
-      <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
-      <Earth />
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          autoRotate
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Earth />
 
-      <Preload all />
+        <Preload all />
+      </Suspense>
     </Canvas>
   );
 };
 
-
-export default EarthCanvas
+export default EarthCanvas;
