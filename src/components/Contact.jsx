@@ -1,8 +1,12 @@
 import React from 'react'
+import { EarthCanvas } from './canvas'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='flex flex-col'>
+      Hello
+      <EarthCanvas />
+    </div>
   )
 }
 
