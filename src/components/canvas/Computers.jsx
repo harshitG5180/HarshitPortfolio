@@ -6,7 +6,8 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   // importing our computer 3D model
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  // const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene_draco.gltf");
 
   return (
     <mesh>
