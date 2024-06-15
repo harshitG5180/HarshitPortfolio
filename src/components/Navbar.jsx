@@ -62,7 +62,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* code for mobile display , the hamburger */}
+        {/* code for mobile display , the hamburger menu */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}

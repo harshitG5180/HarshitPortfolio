@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      width: {
+        '3/10': '30%',
+        '7/10': '70%',
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",

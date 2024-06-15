@@ -27,15 +27,21 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import studyNotion from "./studyNotion.png";
 import crunchFitness from "./crunchFitness.png";
 
 import codeItUp from "./codeItUp.png";
+import dsa from "./tech/dsa2.png"
+import ietdavv from "./company/ietdavv.jpg"
+import pvp from "./company/pvp.jpg"
+import c from "./tech/C.png"
 
-
+// import leetcode from "/leetcode.png"
+// import codechef from "./codechef.png"
 export {
+  c,
+  ietdavv,
+  pvp,
   logo,
   backend,
   creator,
@@ -62,9 +68,8 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
-  tripguide,
   crunchFitness,
   studyNotion,
-  codeItUp
+  codeItUp,
+  dsa,
 };
