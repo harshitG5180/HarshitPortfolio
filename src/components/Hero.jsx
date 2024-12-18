@@ -39,7 +39,7 @@ const Hero = () => {
               type="button"
               onClick={(e) => {
                 e.preventDefault();
-                window.location.href = 'https://drive.google.com/file/d/1oQKUwm4CzoW-VUHxUUqLy9Xdh9t1VVBj/view?usp=sharing';
+                window.location.href = 'https://drive.google.com/file/d/1o-jGKX8M4HS0ZO1Fxqu_ohWp3sUQb8zs/view?usp=drive_link';
               }}>
               <img src={download} alt="Icon" className="w-6 h-6 mr-2 mt-0.5" />
               Resume

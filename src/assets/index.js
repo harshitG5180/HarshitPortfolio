@@ -8,8 +8,10 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
+import interviewPrep from "./interviewPrep.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
+import fog from "./fog.jpg";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -39,6 +41,7 @@ import c from "./tech/C.png"
 // import leetcode from "/leetcode.png"
 // import codechef from "./codechef.png"
 export {
+  interviewPrep,
   c,
   ietdavv,
   pvp,
@@ -64,6 +67,7 @@ export {
   typescript,
   threejs,
   meta,
+  fog,
   shopify,
   starbucks,
   tesla,
